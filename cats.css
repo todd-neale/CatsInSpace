@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.flier,{
+.flier {
 	pointer-events: none;
 }
 
@@ -123,4 +123,4 @@ body {
 		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
 	}
 }
-}
+
