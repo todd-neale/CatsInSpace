@@ -4,14 +4,13 @@ body {
   background-repeat: no-repeat;
 }
 
-.flier,{
+.flier {
 	pointer-events: none;
 }
 
 .flier > * {
-/* Adjust animation duration to change the element’s speed */
-        animation: fly 50s linear infinite;
-        pointer-events: none !important;
+      animation: fly 50s linear infinite;
+      pointer-events: none !important;
 	top: 0;
 	left: 0;
 	transform: translateX(-120%) translateY(-120%) rotateZ(0);
@@ -21,8 +20,7 @@ body {
 }
 
 .flier1 > * {
-  /* Adjust animation duration to change the element’s speed */
-          animation: fly1 60s linear infinite;
+          animation: fly1 80s linear infinite;
           pointer-events: none !important;
     top: 0;
     left: 0;
@@ -33,7 +31,6 @@ body {
   }
 
 .flier2 > * {
-  /* Adjust animation duration to change the element’s speed */
       animation: fly2 100s linear infinite;
       pointer-events: none !important;
   top: 0;
@@ -126,4 +123,4 @@ body {
 		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
 	}
 }
-}
+
