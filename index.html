@@ -1,9 +1,72 @@
-<head> 
+<head>
+  <title>🐈 🐈‍⬛ 🐈 ~ Todd Neale</title>
   <link rel="stylesheet" href="cats.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-<div class="flier"><img src="http://pngimg.com/uploads/cat/cat_PNG50546.png" style="width: 90px" ></div>
-<div class="flier1"><img src="http://pngimg.com/uploads/cat/cat_PNG50512.png" style="width: 180px" ></div>
-<div class="flier2"><img src="./image/Image from iOS.png" style="width: 180px" ></div>
 
+<body>
+  <div class="flier"><img src="./image/Cat3.png" style="width: 140px" ></div>
+  <div class="flier1"><img src="./image/Cat4.png" style="width: 180px" ></div>
+  <div class="flier2"><img src="./image/Cat2.png" style="width: 150px" ></div>
+
+  <div class="container">
+    <div class="card-808" id="introduction">
+      <h1>Hello, My Name is Todd</h1>
+      <h2>
+        I am a junior web-development Graduate from Le Wagon.
+      </h2>
+      <a href="https://drive.google.com/file/d/1lepNJbTd31XaJMB-Zsv2ykcL0g7U7_Nd/view?usp=sharing" class="button" target="_blank">Here is my CV</a>
+      <a class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Spacecats for Zoom</a>
+      <div id="socials">
+      <p>Connect with me</p>
+      <ul class="list-inline">
+        <li>
+          <a href="https://github.com/todd-neale" target="_blank">
+            <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/todd-neale-403809b8" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://buymeacoffee.com/toddne" target="_blank">
+            <i class="fas fa-beer"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Help support my endeavors and recieve your very own <strong>Spacecats Background for Zoom </strong> for £3.50.
+          <br>
+          <br>
+          <div id="smart-button-container">
+            <div style="text-align: center;">
+              <div id="paypal-button-container"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=AYqk-U2iizZygrSp10xI3YmnybxxyoZHNYRTXbzLL53HGiU0zLoXV8SSURT1wI-_y6kz_SOvH_ipGlHw&currency=GBP"></script>
+  <script src="./javascript/pay.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
