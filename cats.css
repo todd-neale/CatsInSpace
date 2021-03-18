@@ -53,6 +53,11 @@ a:hover {
   cursor: pointer;
   text-decoration: none;
 }
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .list-inline {
   list-style: none;
   padding-left: 0px;
@@ -191,22 +196,17 @@ a:hover {
 }
 
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 400px;
+  .card-808 {
+    width: 350px;
+    margin: 150px auto;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .button {
+    margin-top: 10px;
   }
 }
 
