@@ -74,6 +74,17 @@ a:hover {
 .list-inline i:hover {
   color: #030A37;
 }
+.spacecats {
+  padding-top: 10px;
+}
+
+.textcontainer {
+  background-image: linear-gradient(to bottom right, #030A37, #13506E);
+  padding: 20px;
+}
+.buttons-container {
+  padding-top: 20px;
+}
 
 .flier {
 	pointer-events: none;
