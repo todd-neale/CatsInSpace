@@ -1,7 +1,73 @@
 body {
-  background-image: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2833&q=80);
+  background-image: url(./image/space-background.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  font-weight: lighter;
+  line-height: 1.6;
+}
+h1, h2, h3, a, p {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+h1 {
+  font-size: 24px !important;
+}
+h2 {
+  font-size: 12px !important;
+  padding-bottom: 20px;
+}
+p {
+  font-size: 10px;
+  padding-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+}
+
+.card-808 {
+  width: 500px;
+  margin: 150px auto;
+  padding: 50px;
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.button {
+  background-color: transparent;
+  color: white;
+  padding: 12px 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 10px;
+  text-decoration: none;
+}
+.button:hover {
+  background-image: linear-gradient(to bottom right, #030A37, #13506E);
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 10px;
+}
+.list-inline i {
+  font-size: 30px;
+  color: white;
+}
+.list-inline i:hover {
+  color: #030A37;
 }
 
 .flier {
@@ -122,5 +188,25 @@ body {
 	95% {
 		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
 	}
+}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 400px;
+  }
 }
 
