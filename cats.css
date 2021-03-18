@@ -22,7 +22,7 @@ p {
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   color: white !important;
 }
 a:hover {
@@ -31,7 +31,7 @@ a:hover {
 
 .card-808 {
   width: 500px;
-  margin: 150px auto;
+  margin: 50px auto;
   padding: 50px;
   background-color: transparent;
   text-align: center;
@@ -78,12 +78,22 @@ a:hover {
   padding-top: 10px;
 }
 
-.text-container {
+.text-scroll {
   background-image: linear-gradient(to bottom right, #030A37, #13506E);
   padding: 20px;
+  margin: 4px, 4px;
+  height: 350px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .buttons-container {
   padding-top: 20px;
+}
+.screenshot img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  padding-top: 10px;
 }
 
 .flier {
