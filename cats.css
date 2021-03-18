@@ -229,5 +229,8 @@ a:hover {
   .button {
     margin-top: 10px;
   }
+  .screenshot img {
+    width: 200px;
+  }
 }
 
