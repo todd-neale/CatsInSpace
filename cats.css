@@ -200,7 +200,7 @@ a:hover {
   /* For a screen < 540px, this CSS will be read */
   .card-808 {
     width: 350px;
-    margin: 150px auto;
+    margin: 50px auto;
   }
   .buttons {
     flex-direction: column;
