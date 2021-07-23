@@ -15,6 +15,7 @@ h1 {
 h2 {
   font-size: 12px !important;
   padding-bottom: 20px;
+  font-weight: lighter;
 }
 p {
   font-size: 10px;
@@ -31,12 +32,13 @@ a:hover {
 
 .card-808 {
   width: 500px;
-  margin: 50px auto;
+  margin: 130px auto;
   padding: 50px;
   background-color: transparent;
   text-align: center;
   border: 1px solid white;
   border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .button {
   background-color: transparent;
