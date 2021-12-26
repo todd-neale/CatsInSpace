@@ -1,0 +1,49 @@
+html {
+  font-size: 10px;
+  background-size: cover;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+}
+
+kbd {
+  font-family: 'Press Start 2P', cursive;
+  display: block;
+}
+
+.keys {
+  font-size: 10px;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: white;
+  box-shadow: 0 0 1rem whitesmoke;
+}
+
+.sound {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #F8A125;
+}
