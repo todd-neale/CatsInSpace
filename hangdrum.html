@@ -12,6 +12,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <div class="flier"><img src="./image/Cat3.png" style="width: 140px" ></div>
+  <div class="flier1"><img src="./image/Cat4.png" style="width: 180px" ></div>
+  <div class="flier2"><img src="./image/Cat5.png" style="width: 150px" ></div>
+
   <div class="container drum">
 
     <div class="hang-button-container">
@@ -63,29 +67,7 @@
   <audio data-key="74" src="hang/Untitled Ds.wav"></audio>
   <audio data-key="75" src="hang/Untitled E-1.wav"></audio>
 
-<script>
-
-  function playSound(e) {
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-    if(!audio) return; // stop the function from running
-    audio.currentTime = 0; // rewind to start
-    audio.play();
-    key.classList.add('playing');
-  };
-  
-  function removeTransition(e) {
-    if(e.propertyName !== 'transform') return; // skip it if it's not a transform
-    this.classList.remove('playing');
-  };
-  
-  const keys = document.querySelectorAll('.key');
-  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-  
-  window.addEventListener('keydown', playSound);
-  
-</script> 
-
+<script src="./javascript/hangdrum.js"></script> 
 
 </body>
 </html>

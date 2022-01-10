@@ -13,9 +13,9 @@ kbd {
   display: block;
 }
 
-/* .hang-button-container {
+.hang-button-container {
   padding: 5vh;
-} */
+}
 
 .drum {
   height: 100vh;
