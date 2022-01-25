@@ -40,6 +40,16 @@ a:hover {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.card-909 {
+  height: 80vh;
+  margin: 130px auto;
+  padding: 50px;
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .button {
   background-color: transparent;
   color: white;
