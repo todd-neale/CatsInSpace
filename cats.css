@@ -235,6 +235,10 @@ a:hover {
     width: 350px;
     margin: 50px auto;
   }
+  .card-90 {
+    width: 350px;
+    margin: 50px auto;
+  }
   .buttons {
     flex-direction: column;
   }
