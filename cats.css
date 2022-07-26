@@ -30,6 +30,10 @@ a:hover {
   color: white;
 }
 
+li {
+    margin: 0 0;
+}
+
 .card-808 {
   width: 500px;
   margin: 130px auto;
