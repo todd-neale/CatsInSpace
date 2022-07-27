@@ -1,4 +1,8 @@
 function playSound(e) {
+  e.stopPropagation();
+  let changedTouch = e.changedTouches[0];
+  let elem = document.elementFromPoint(changedTouch.clientX, changedTouch.clientY);
+  console.log(elem);
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
   if(!audio) return; // stop the function from running
@@ -16,4 +20,4 @@ const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
 window.addEventListener('keydown', playSound);
-window.addEventListener('touchend', playSound);
+window.addEventListener('touchstart', playSound);
