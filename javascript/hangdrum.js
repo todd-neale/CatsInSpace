@@ -1,8 +1,16 @@
 function playSound(e) {
-  e.stopPropagation();
-  let changedTouch = e.changedTouches[0];
-  let elem = document.elementFromPoint(changedTouch.clientX, changedTouch.clientY);
-  console.log(elem);
+  if (e.type === "touchstart") {
+    e.stopPropagation();
+    let changedTouch = e.changedTouches[0];
+    let elem = document.elementFromPoint(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
+    console.log(elem.dataset.key);
+    const audio = document.querySelector(`audio[data-key="${elem.dataset.key}"]`);
+    const key = document.querySelector(`.key[data-key="${elem.dataset.key}"]`);
+    if(!audio) return; // stop the function from running
+    audio.currentTime = 0; // rewind to start
+    audio.play();
+    key.classList.add('playing');
+  }
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
   if(!audio) return; // stop the function from running
